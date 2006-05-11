@@ -1,4 +1,5 @@
 Summary:	Tool for buffering data streams
+Summary(pl):	Narzêdzie do buforowania strumieni danych
 Name:		mbuffer
 Version:	20060421
 Release:	0.1
@@ -19,6 +20,17 @@ stop and rewind if they have a buffer underrun. This so called tape
 screwing reduces the lifetime of the motors. mbuffer can prevent
 buffer underruns, if used correctly and speed up the whole backup
 process. Please read the man page for details, how to use it.
+
+%description -l pl
+mbuffer to narzêdzie do buforowania strumieni danych. Jego cech±
+szczególn± jest pokazywanie u¿ytkownikowi prêdko¶ci we/wy i
+podsumowania - by³o to g³ównym celem stworzenia narzêdzia. Jest
+szczególnie przydatne przy zapisie kopii zapasowych na szybkie napêdy
+i biblioteki ta¶mowe. Napêdy te maj± tendencje do zatrzymywania siê i
+cofania w przypadku opró¿nienia bufora. Poprawnie u¿yty mbuffer mo¿e
+zapobiec opró¿nieniom bufora (buffer underruns) i przyspiesza ca³y
+proces tworzenia kopii zapasowych. Szczegó³y dotycz±ce u¿ywania
+programu mo¿na znale¼æ w manualu.
 
 %prep
 %setup -q

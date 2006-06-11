@@ -8,6 +8,7 @@ Group:		Applications
 Source0:	http://www.maier-komor.de/software/mbuffer/%{name}-%{version}.tgz
 # Source0-md5:	b1e7b6596052e853352321101d9b09d8
 URL:		http://www.maier-komor.de/mbuffer.html
+BuildRequires:	automake
 BuildRequires:	openssl-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 

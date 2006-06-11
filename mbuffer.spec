@@ -36,6 +36,7 @@ programu mo¿na znale¼æ w manualu.
 %setup -q
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure \
 	--disable-debug
 

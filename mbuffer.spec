@@ -1,5 +1,5 @@
 Summary:	Tool for buffering data streams
-Summary(pl.UTF-8):   Narzędzie do buforowania strumieni danych
+Summary(pl.UTF-8):	Narzędzie do buforowania strumieni danych
 Name:		mbuffer
 Version:	20060421
 Release:	0.1

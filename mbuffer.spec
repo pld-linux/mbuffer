@@ -1,12 +1,13 @@
 Summary:	Tool for buffering data streams
 Summary(pl.UTF-8):	Narzędzie do buforowania strumieni danych
 Name:		mbuffer
-Version:	20060421
+Version:	20070518
 Release:	0.1
 License:	GPL
 Group:		Applications
 Source0:	http://www.maier-komor.de/software/mbuffer/%{name}-%{version}.tgz
-# Source0-md5:	b1e7b6596052e853352321101d9b09d8
+# Source0-md5:	2b85347f315a3e0a226a1522dab4a813
+Patch0:		%{name}-as-needed.patch
 URL:		http://www.maier-komor.de/mbuffer.html
 BuildRequires:	automake
 BuildRequires:	openssl-devel
@@ -35,6 +36,7 @@ programu można znaleźć w manualu.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 cp -f /usr/share/automake/config.sub .

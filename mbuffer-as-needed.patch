@@ -1,0 +1,11 @@
+--- mbuffer-20070518/Makefile.in.org	2007-05-31 19:26:12.570774455 +0000
++++ mbuffer-20070518/Makefile.in	2007-05-31 19:26:36.447797163 +0000
+@@ -21,7 +21,7 @@
+ $(OBJECTS): config.h
+ 
+ $(TARGET): $(OBJECTS)
+-	$(CC) $(CFLAGS) $(LDFLAGS) $(LIBS) $(OBJECTS) -o $@
++	$(CC) $(CFLAGS) $(LDFLAGS)  $(OBJECTS) -o $@ $(LIBS)
+ 
+ clean:
+ 	-$(RM) $(OBJECTS)
